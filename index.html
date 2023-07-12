@@ -6,82 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="icon" href="./moli.jpg">
-</head>
-
-<body>
-    <!-- head -->
-    <div class="head">
-        <div class="an"><a href="#">Home</a></div>
-        <div class="an"><a href="#aboutMe">About Me</a></div>
-        <div class="an"><a href="#Contact">Contact Me</a></div>
-    </div>
     <style>
+        /* Common styles */
+        body {
+            background-color: aliceblue;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Styles for desktop and larger screens */
         .head {
             display: flex;
             padding: 80px;
             padding-left: 30%;
             font-size: 30px;
-
-
         }
 
         .an a {
-
             text-decoration: none;
             padding: 40px;
             justify-content: center;
-
-        }
-
-        body {
-            background-color: aliceblue;
-            padding: 0%;
-            margin: 0%;
-            background-image: url(./16878041325141678256506017756165.png);
-            background-repeat: no-repeat;
-            background-size: 100%;
-
-
         }
 
         .an:hover {
             border: 1px red solid;
             background-color: aqua;
             font-size: 25px;
-
         }
-    </style>
 
-    <div class="head1">
-        <p style="font-size: 50px;">Hello..!</p>
-        <h1 id="ht" style="font-size: 80px;">i'm.&nbsp;SHASHANK</h1>
-        <a href="#Contact"><button>Hire Me</button></a>
-
-    </div>
-    <style>
         .head1 {
             padding-left: 150px;
-
         }
 
         button {
             font-size: 30px;
             color: red;
             border-radius: 10px 10px;
-
         }
 
         button:hover {
             background-color: aquamarine;
         }
-    </style>
-    <div class="sub">
-        <p class="developer">Developer</p>
-        <p class="developer-txt">With<br>good knowledge in <span>JAVA</span>,
-            <span>JDBC</span>,<br><span>Hibernate</span> and <span>SQL</span><br><span>HTML</span>, <span>CSS</span>
-        </p>
-    </div>
-    <style>
+
         .sub {
             margin-left: 40%;
             padding-left: 20px;
@@ -90,7 +56,6 @@
             background-color: #F2F2F2;
             box-shadow: -4px -4px 12px rgba(210, 206, 211, 0.08), 4px 4px 12px rgba(0, 0, 0, 0.2);
             border-radius: 20px;
-
         }
 
         .sub>.developer {
@@ -107,13 +72,7 @@
             font-size: 30px;
             color: #03203C;
         }
-    </style>
-    <div class="resumecon">
-        <p class="resume"><span>Tap to View my</span><a class="aresume"
-                href="./Shashank_resume.pdf">Resume</a><span>here</span></p>
-    </div>
 
-    <style>
         .resumecon {
             margin: 60px 0 0 0;
             width: 100%;
@@ -149,7 +108,239 @@
             border: none;
             background: #DD3500;
         }
+
+        .aboutMe {
+            font-size: 30px;
+            margin: 30px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .p1 {
+            float: left;
+            width: 45%;
+            border: 4px solid black;
+            border-radius: 30px 30px;
+            padding: 15px;
+            margin-left: 25px;
+        }
+
+        .p2 {
+            float: right;
+            width: 45%;
+            border: 4px solid black;
+            border-radius: 30px 30px;
+            padding: 15px;
+            margin-right: 25px;
+        }
+
+        .pc3 {
+            background-color: aqua;
+            width: 100%;
+        }
+
+        .p3 {
+            text-align: justify;
+            margin: 30px;
+        }
+
+        marquee {
+            background-color: yellow;
+            color: blue;
+            font-weight: bold;
+        }
+
+        footer {
+            width: 100%;
+            padding: 25px;
+            background-color: black;
+            background-image: url(./contact.png);
+            background-position: 30%;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            margin-top: 50px;
+        }
+
+        .foot1 {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            font-size: 20px;
+            color: #DD3500;
+        }
+
+        @media (max-width: 768px) {
+            /* Styles for tabs */
+            .head {
+                padding-left: 10%;
+                font-size: 24px;
+            }
+
+            .an a {
+                padding: 20px;
+            }
+
+            .head1 {
+                padding-left: 50px;
+            }
+
+            button {
+                font-size: 24px;
+            }
+
+            .sub {
+                margin-left: 20%;
+                width: 300px;
+                height: 300px;
+                font-size: 24px;
+            }
+
+            .sub>.developer {
+                font-size: 48px;
+            }
+
+            .sub>.developer-txt {
+                font-size: 24px;
+            }
+
+            .resumecon>.resume span {
+                font-size: 20px;
+            }
+
+            .aresume {
+                font-size: 24px;
+            }
+
+            .aboutMe {
+                font-size: 24px;
+                margin: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .p1,
+            .p2 {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 10px;
+            }
+
+            .p3 {
+                margin: 20px;
+            }
+
+            footer {
+                padding: 15px;
+            }
+
+            .foot1 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Styles for mobile devices */
+            .head {
+                padding: 40px;
+                padding-left: 5%;
+                font-size: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .an a {
+                padding: 10px;
+            }
+
+            .head1 {
+                padding-left: 20px;
+                text-align: center;
+            }
+
+            button {
+                font-size: 20px;
+            }
+
+            .sub {
+                margin-left: 10%;
+                width: 250px;
+                height: 250px;
+                font-size: 20px;
+            }
+
+            .sub>.developer {
+                font-size: 36px;
+            }
+
+            .sub>.developer-txt {
+                font-size: 20px;
+            }
+
+            .resumecon>.resume span {
+                font-size: 16px;
+            }
+
+            .aresume {
+                font-size: 20px;
+            }
+
+            .aboutMe {
+                font-size: 20px;
+                margin: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .p1,
+            .p2 {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 10px;
+            }
+
+            .p3 {
+                margin: 15px;
+            }
+
+            footer {
+                padding: 10px;
+            }
+
+            .foot1 {
+                font-size: 14px;
+            }
+        }
     </style>
+</head>
+
+<body>
+    <!-- head -->
+    <div class="head">
+        <div class="an"><a href="#">Home</a></div>
+        <div class="an"><a href="#aboutMe">About Me</a></div>
+        <div class="an"><a href="#Contact">Contact Me</a></div>
+    </div>
+
+    <div class="head1">
+        <p style="font-size: 50px;">Hello..!</p>
+        <h1 id="ht" style="font-size: 80px;">i'm.&nbsp;SHASHANK</h1>
+        <a href="#Contact"><button>Hire Me</button></a>
+    </div>
+
+    <div class="sub">
+        <p class="developer">Developer</p>
+        <p class="developer-txt">With<br>good knowledge in <span>JAVA</span>,
+            <span>JDBC</span>,<br><span>Hibernate</span> and <span>SQL</span><br><span>HTML</span>, <span>CSS</span>
+        </p>
+    </div>
+
+    <div class="resumecon">
+        <p class="resume"><span>Tap to View my</span><a class="aresume"
+                href="./Shashank_resume.pdf">Resume</a><span>here</span></p>
+    </div>
 
     <div class="aboutMe" id="aboutMe">
         <center>
@@ -176,10 +367,7 @@
                     If you give me an opportunity to prove that I have the zeal in me to learn.
                     Thank you for your valuable time.
                 </p>
-
             </div>
-
-
         </div>
         <br>
         <div>
@@ -220,172 +408,21 @@
                 resume for your review. I look forward to the possibility of being invited for an interview to
                 further discuss how my skills align with your requirements.
                 Thank you for your time and consideration.<br><br>
-
             </P>
         </div>
     </div>
 
-
-    <style>
-        .aboutMe {
-
-            font-size: 30px;
-            margin: 30px;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-
-        .p1 {
-            float: left;
-            width: 45%;
-            border: 4px solid black;
-            border-radius: 30px 30px;
-            padding: 15px;
-            margin-left: 25px;
-        }
-
-        .p2 {
-            float: right;
-            width: 45%;
-            border: 4px solid black;
-            border-radius: 30px 30px;
-            padding: 15px;
-            margin-right: 25px;
-        }
-
-        .pc3 {
-            background-color: aqua;
-            width: 100%;
-        }
-
-        .p3 {
-            text-align: justify;
-            margin: 30px 30px 30px 30px;
-        }
-
-        marquee {
-            background-color: yellow;
-            color: blue;
-            font-weight: bold;
-
-        }
-    </style>
-
     <footer class="foot" id="Contact">
         <div>
-            <a class="foot1" style="color: #DD3500;" href="mailto:shashankmos26@gmail.com"><img width="30px"
-                    src="./Email.png" alt="Emaail" width="40px">&nbsp;shashankmos26@gmail.com</a><br><br>
-            <a class="foot1" style="color: #DD3500;" href="tel:8884364795"><img width="30px" src="./mobile.png"
-                    alt="Mobile" width="50px">&nbsp; +918884364795</a><br><br>
-            <a class="foot1" style="color: #DD3500;" href="./linkedin.html"><img width="30px" src="./linked.png"
-                    alt="linkedin" width="30px">&nbsp;
+            <a class="foot1" href="mailto:shashankmos26@gmail.com"><img width="30px" src="./Email.png" alt="Emaail"
+                    width="40px">&nbsp;shashankmos26@gmail.com</a><br><br>
+            <a class="foot1" href="tel:8884364795"><img width="30px" src="./mobile.png" alt="Mobile"
+                    width="50px">&nbsp; +918884364795</a><br><br>
+            <a class="foot1" href="./linkedin.html"><img width="30px" src="./linked.png" alt="linkedin"
+                    width="30px">&nbsp;
                 https://www.linkedin.com/in/shashank-m-o-81487a21a</a>
-
         </div>
-
-
     </footer>
-
-    <style>
-        .foot {
-            width: 100%;
-            height: 500px;
-            padding: 25px;
-            background-color: black;
-            background-image: url(./contact.png);
-            background-position: 30%;
-            background-repeat: no-repeat;
-            text-decoration: none;
-            margin-top: 50px;
-
-        }
-
-        .foot1 {
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            padding-top: 30px;
-            font-size: 20px;
-        }
-    </style>
-    <!--  Mobile styles -->
-    <style>
-        @media (max-width: 767px) {
-            .head {
-                padding: 20px;
-                padding-left: 10%;
-                font-size: 30px;
-            }
-
-            .an a {
-                padding: 20px;
-            }
-
-            .head1 {
-                padding-left: 20px;
-            }
-
-            button {
-                font-size: 30px;
-            }
-
-            .sub {
-                margin-left: 15%;
-                padding-left: 15px;
-                width: 100%;
-                height: auto;
-            }
-
-            .sub>.developer {
-                font-size: 50px;
-            }
-
-            .sub>.developer-txt {
-                font-size: 30px;
-            }
-
-            .resumecon>.resume span {
-                font-size: 20px;
-            }
-
-            .aresume {
-                font-size: 25px;
-            }
-
-            .aboutMe {
-                font-size: 20px;
-                margin: 20px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-            }
-
-            .p1,
-            .p2 {
-                width: 90%;
-                margin-left: 10px;
-                margin-right: 10px;
-            }
-
-            .pc3 {
-                width: 90%;
-            }
-
-            .p3 {
-                margin: 20px;
-            }
-
-            .foot {
-                height: auto;
-                width: 100%;
-                padding: 15px;
-            }
-
-            .foot1 {
-                font-size: 16px;
-            }
-        }
-    </style>
 </body>
 
 </html>
